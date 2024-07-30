@@ -17,9 +17,9 @@ Note that this revenue can be negative.
 
 Write a solution to report the customers with postive revenue in the year 2021.
 
--- Return the result table in any order.
+Return the result table in any order.
 
--- The result format is in the following example.
+The result format is in the following example.
 
  
 
