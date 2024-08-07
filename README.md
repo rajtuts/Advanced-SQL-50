@@ -1,5 +1,4 @@
-<h1> LeetCode Advanced SQL 50 list- 50/50 solved</h1>
-<h1> Checkout my other repositories for more LeetCode Lists and problem solutions</h1>
+<h1> LeetCode Advanced SQL 50</h1>
 
 ## Table of Contents
 
@@ -8,10 +7,10 @@
 | #    | Problem                                                                               | Level | Status |
 | ---- | ------------------------------------------------------------------------------------- | ----- | ------ |
 | 1821 | [Find Customers With Positive Revenue this Year](/01-01821-find-customers-with-positive-revenue-this-year.sql) | Easy  | Solved |
-| 183  | [Find Customer Referee](/1-Select/584_Find_Customer_Referee.sql)                      | Easy  | Solved |
-| 1873  | [Big Countries](/1-Select/595_Big_Countries.sql)                                      | Easy  | Solved |
-| 1398 | [Article Views](/1-Select/1148_Article_Views_I.sql)                                   | Easy  | Solved |
-| 1112 | [Invalid Tweets](/1-Select/1683_Invalid_Tweets.sql)                                   | Easy  | Solved |
+| 183  | [Customers Who Never Order](/02-00183-customers-who-never-order.sql)                      | Easy  | Solved |
+| 1873 | [Calculate Special Bonus](/03-01873-calculate-special-bonus.sql)                                      | Easy  | Solved |
+| 1398 | [Customers Who Bought Products A and B but Not C](/04-01398-customers-who-bought-products-A-and-B-but-not-C.sql)                                   | Easy  | Solved |
+| 1112 | [Highest Grade For Each Student](/05-01112-highest-grade-for-each-student.sql)                                   | Easy  | Solved |
 
 ### Basic Joins
 
