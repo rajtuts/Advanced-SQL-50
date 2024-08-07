@@ -19,8 +19,8 @@
 | 175  | [Combine Two Tables](/06-00175-combine-two-tables.sql)                                                                                    | Easy   | Solved |
 | 1068 | [Product Sales Analysis I](/2-Basic-Joins/1068_Product_Sales_Analysis%20I.sql)                                                           | Easy   | Solved |
 | 1407 | [Top Travellers](/08-01407-top-travellers.sql)                                                                                           | Easy   | Solved |  ***  |
-| 197  | [Rising Temperature](/2-Basic-Joins/197_Rising_Temperature.sql)                                                                          | Easy   | Solved |
-| 1661 | [Average Time of Process per Machine](/2-Basic-Joins/1661_Average_Time_of_Process_per_Machine.sql)                                       | Easy   | Solved |
+| 607  | [Sales Person](/09-00607-sales-person.sql)                                                                                               | Easy   | Solved |
+| 1440 | [Evaluate Boolean Expression](/10-01440-evaluate-boolean-expression.sql)                                                                 | Easy   | Solved |
 | 577  | [Employee Bonus](/2-Basic-Joins/577_Employee_Bonus.sql)                                                                                  | Easy   | Solved |
 | 1280 | [Students and Examinations](/2-Basic-Joins/1280_Students_and_Examinations.sql)                                                           | Easy   | Solved |
 | 570  | [Managers with at Least 5 Direct Reports](/2-Basic-Joins/570_Managers_with_at_Least_5_Direct_Reports.sql)                                | Medium | Solved |
