@@ -1,4 +1,4 @@
--- pick id from Orders, and do not select those ids
+-- 183. Customers Who Never Order
 
 
 -- Table: Customers
