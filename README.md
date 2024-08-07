@@ -4,19 +4,19 @@
 
 ### Select
 
-| #    | Problem                                                                               | Level | Status |
-| ---- | ------------------------------------------------------------------------------------- | ----- | ------ |
-| 1821 | [Find Customers With Positive Revenue this Year](/01-01821-find-customers-with-positive-revenue-this-year.sql) | Easy  | Solved |
-| 183  | [Customers Who Never Order](/02-00183-customers-who-never-order.sql)                      | Easy  | Solved |
-| 1873 | [Calculate Special Bonus](/03-01873-calculate-special-bonus.sql)                                      | Easy  | Solved |
-| 1398 | [Customers Who Bought Products A and B but Not C](/04-01398-customers-who-bought-products-A-and-B-but-not-C.sql)                                   | Easy  | Solved |
-| 1112 | [Highest Grade For Each Student](/05-01112-highest-grade-for-each-student.sql)                                   | Easy  | Solved |
+| #    | Problem                                                                                                           | Level | Status |
+| ---- | ----------------------------------------------------------------------------------------------------------------- | ----- | ------ |
+| 1821 | [Find Customers With Positive Revenue this Year](/01-01821-find-customers-with-positive-revenue-this-year.sql)    | Easy  | Solved |
+| 183  | [Customers Who Never Order](/02-00183-customers-who-never-order.sql)                                              | Easy  | Solved |
+| 1873 | [Calculate Special Bonus](/03-01873-calculate-special-bonus.sql)                                                  | Easy  | Solved |
+| 1398 | [Customers Who Bought Products A and B but Not C](/04-01398-customers-who-bought-products-A-and-B-but-not-C.sql)  | Easy  | Solved |
+| 1112 | [Highest Grade For Each Student](/05-01112-highest-grade-for-each-student.sql)                                    | Easy  | Solved |
 
 ### Basic Joins
 
 | #    | Problem                                                                                                                                  | Level  | Status | Level |
 | ---- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ | ----- |
-| 1378 | [Replace Employee ID With The Unique Identifier](/2-Basic-Joins/1378_Replace_Employee_ID_With_The_Unique_Identifier.sql)                 | Easy   | Solved |
+| 175 | [Combine Two Tables](/06-00175-combine-two-tables.sql)                                                                                   | Easy   | Solved |
 | 1068 | [Product Sales Analysis I](/2-Basic-Joins/1068_Product_Sales_Analysis%20I.sql)                                                           | Easy   | Solved |
 | 1581 | [Customer Who Visited but Did Not Make Any Transactions](/2-Basic-Joins/1581_Customer_Who_Visited_but_Did_Not_Make_Any_Transactions.sql) | Easy   | Solved |  ***  |
 | 197  | [Rising Temperature](/2-Basic-Joins/197_Rising_Temperature.sql)                                                                          | Easy   | Solved |
