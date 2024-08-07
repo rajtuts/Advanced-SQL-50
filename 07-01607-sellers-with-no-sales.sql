@@ -1,3 +1,5 @@
+## 1607. Sellers With No Sales
+
 -- select sellers from Orders table
 -- then select Sellers from Sellers table who are not in temp
 
