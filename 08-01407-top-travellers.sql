@@ -102,8 +102,17 @@ insert into Rides (id, user_id, distance) values ('7', '7', '120')
 insert into Rides (id, user_id, distance) values ('8', '19', '400')
 insert into Rides (id, user_id, distance) values ('9', '7', '230')
 
-  
+-- Solution
 
+-- Oracle
+select U.name, 
+NVL(sum(R.distance),0) travelled_distance
+from Users U
+left join Rides R on U.id=R.User_id
+group by U.name, U.id
+order by 2 desc NULLS Last, 1 ASC;
+
+-- MySQL
 -- using ifnull around sum()- can also use coalesce
 
 select u.name, ifnull(sum(r.distance), 0) as travelled_distance
