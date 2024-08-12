@@ -29,14 +29,14 @@
 
 | #    | Problem                                                                                                     | Level  | Status |
 | ---- | ----------------------------------------------------------------------------------------------------------- | ------ | ------ |
-| 1280 | [The Latest Login in 2020](/12-01890-the-latest-login-in-2020.sql)                                          | Easy | Solved |
-| 0511 | [Game Play Analysis I](/13-00511-game-play-analysis-i.sql)                                                  | Easy | Solved |
-| 1571 | [Warehouse Manager](/14-01571-warehouse-manager.sql)                                                        | Easy | Solved |
+| 1280 | [The Latest Login in 2020](/12-01890-the-latest-login-in-2020.sql)                                          | Easy   | Solved |
+| 0511 | [Game Play Analysis I](/13-00511-game-play-analysis-i.sql)                                                  | Easy   | Solved |
+| 1571 | [Warehouse Manager](/14-01571-warehouse-manager.sql)                                                        | Easy   | Solved |
 | 0586 | [Customer Placing the Largest Number of Orders](/15-00586-customer-placing-the-largest-number-of-orders.sql)| Easy   | Solved |
 | 1741 | [Find Total Time Spent by Each Employee](/16-01741-find-total-time-spent-by-each-employee.sql)              | Easy   | Solved |
-| 1173 | [Immediate Food Delivery I](/17-01173-immediate-food-delivery-i.sql)                                       | Medium | Solved |
-| 1445 | [Apples & Oranges](/18-01445-apples-%26-oranges.sql)                                                        | Easy   | Solved |
-| 1699 | [Number of Calls Between Two Persons](/19-01699-number-of-calls-between-two-persons.sql)                    | Easy   | Solved |
+| 1173 | [Immediate Food Delivery I](/17-01173-immediate-food-delivery-i.sql)                                        | Easy   | Solved |
+| 1445 | [Apples & Oranges](/18-01445-apples-%26-oranges.sql)                                                        | Medium | Solved |
+| 1699 | [Number of Calls Between Two Persons](/19-01699-number-of-calls-between-two-persons.sql)                    | Medium | Solved |
 
 
 ### Sorting and Grouping
