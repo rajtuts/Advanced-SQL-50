@@ -99,9 +99,25 @@ The hard disk was never ordered and we do not include it in the result table.
 
 -- Solution
 ----------------------------------------------------------------------------------------------------------------
---Oracle & MySQL
+--Oracle
 ----------------------------------------------------------------------------------------------------------------
+with main as
+(
+select * from
+(
+select a.*, rank() over (partition by product_id order by order_date desc) rn
+from orders a
+) a where rn =1
+)
+select product_name,m.product_id,order_id,to_char(order_date,'YYYY-MM-DD') order_date
+from
+main m join products p on m.product_id = p.product_id
+order by 1,2,3
 
+
+----------------------------------------------------------------------------------------------------------------
+-- MySQL
+----------------------------------------------------------------------------------------------------------------
 
 -- using window function- dense_rank() to get most recent orders by date, partition by product_id
 
