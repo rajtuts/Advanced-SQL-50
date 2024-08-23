@@ -73,7 +73,7 @@
 | ---- | ------------------------------------------------------------------------------------------------------------------------------ | ------ | ------ |
 | 1350 | [Students With Invalid Departments](/36-01350-students-with-invalid-departments.sql)                                           | Easy   | -      |
 | 1303 | [Find the Team Size](/37-01303-find-the-team-size.sql)                                                                         | Easy   | -      |
-| 0152 | [Game Play Analysis II](/38-00512-game-play-analysis-ii.sql)                                                                   | Easy   | -      |
+| 0512 | [Game Play Analysis II](/38-00512-game-play-analysis-ii.sql)                                                                   | Easy   | -      |
 | 0184 | [Department Highest Salary](/39-00184-department-highest-salary.sql)                                                           | Medium | -      |
 | 1549 | [The Most Recent Orders for Each Product](/40-01549-the-most-recent-orders-for-each-product.sql)                               | Medium | -      |
 | 1532 | [The Most Recent Three Orders](/41-01532-the-most-recent-three-orders.sql)                                                     | Medium | -      |
