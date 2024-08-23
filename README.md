@@ -22,7 +22,7 @@
 | 1407 | [Top Travellers](/08-01407-top-travellers.sql)                                                              | Easy   | Solved | 
 | 0607 | [Sales Person](/09-00607-sales-person.sql)                                                                  | Easy   | Solved |
 | 1440 | [Evaluate Boolean Expression](/10-01440-evaluate-boolean-expression.sql)                                    | Medium | Solved |
-| 1440 | [Team Scores in Football Tournament](/11-01212-teams-scores-in-football-tournamant.sql)                     | Medium | Solved |
+| 1212 | [Team Scores in Football Tournament](/11-01212-teams-scores-in-football-tournamant.sql)                     | Medium | Solved |
 
 
 ### Basic Aggregate Functions
