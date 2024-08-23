@@ -85,9 +85,9 @@
 | ---- | ------------------------------------------------------------------------------------------------------------------------------ | ------ | ------ |
 | 1077 | [Project Employees III](/43-01077-project-employees-iii.sql)                                                                   | Medium | -      |
 | 1285 | [Find the Start and End Number of Continuous Ranges](/44-01285-find-the-start-and-end-number-of-continuous-ranges.sql)         | Medium | -      |
-| 1596 | [The Most Frequently Ordered Products for Each Customer](/45-01596-the-most-frequently-ordered-products-for-each-customer.sql) | Medium | - |
-| 1709 | [Biggest Window Between Visits](/46-01709-biggest-window-between-visits.sql)                                                   | Medium | - |
-| 1270 | [All People Report to the Given Manager](/47-01270-all-people-report-to-the-given-manager.sql)                                 | Medium | -      |
-| 1412 | [Find the Quiet Students in All Exams](/48-01412-find-the-quiet-students-in-all-exams.sql)                                     | Hard   | - |
-| 1767 | [Find the Subtasks That Did Not Execute](/49-01767-find-the-subtasks-that-did-not-execute.sqll)                                | Hard   | - |
-| 1225 | [Report Contiguous Dates](/50-01225-report-contiguous-dates.sql)                                                               | Hard   | -      |
+| 1596 | [The Most Frequently Ordered Products for Each Customer](/45-01596-the-most-frequently-ordered-products-for-each-customer.sql) | Medium | *** |
+| 1709 | [Biggest Window Between Visits](/46-01709-biggest-window-between-visits.sql)                                                   | Medium | *** |
+| 1270 | [All People Report to the Given Manager](/47-01270-all-people-report-to-the-given-manager.sql)                                 | Medium | ***      |
+| 1412 | [Find the Quiet Students in All Exams](/48-01412-find-the-quiet-students-in-all-exams.sql)                                     | Hard   | *** |
+| 1767 | [Find the Subtasks That Did Not Execute](/49-01767-find-the-subtasks-that-did-not-execute.sql)                                | Hard   | *** |
+| 1225 | [Report Contiguous Dates](/50-01225-report-contiguous-dates.sql)                                                               | Hard   | ***      |
