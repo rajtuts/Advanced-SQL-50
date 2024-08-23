@@ -18,7 +18,7 @@
 | #    | Problem                                                                                                     | Level  | Status | 
 | ---- | ------------------------------------------------------------------------------------------------------------| ------ | ------ |
 | 0175 | [Combine Two Tables](/06-00175-combine-two-tables.sql)                                                      | Easy   | Solved |
-| 1068 | [Product Sales Analysis I](/1068_Product_Sales_Analysis%20I.sql)                                            | Easy   | Solved |
+| 1067 | [Product Sales Analysis I](/07-01607-sellers-with-no-sales.sql)                                            | Easy   | Solved |
 | 1407 | [Top Travellers](/08-01407-top-travellers.sql)                                                              | Easy   | Solved | 
 | 0607 | [Sales Person](/09-00607-sales-person.sql)                                                                  | Easy   | Solved |
 | 1440 | [Evaluate Boolean Expression](/10-01440-evaluate-boolean-expression.sql)                                    | Medium | Solved |
