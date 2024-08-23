@@ -1,37 +1,36 @@
-1532. The Most Recent Three Orders
+1077. Project Employees III
 
-    Table: Customers
+Table: Project
 
-+---------------+---------+
-| Column Name   | Type    |
-+---------------+---------+
-| customer_id   | int     |
-| name          | varchar |
-+---------------+---------+
-customer_id is the column with unique values for this table.
-This table contains information about customers.
-
- 
-
-Table: Orders
-
-+---------------+---------+
-| Column Name   | Type    |
-+---------------+---------+
-| order_id      | int     |
-| order_date    | date    |
-| customer_id   | int     |
-| cost          | int     |
-+---------------+---------+
-order_id is the column with unique values for this table.
-This table contains information about the orders made by customer_id.
-Each customer has one order per day.
++-------------+---------+
+| Column Name | Type    |
++-------------+---------+
+| project_id  | int     |
+| employee_id | int     |
++-------------+---------+
+(project_id, employee_id) is the primary key (combination of columns with unique values) of this table.
+employee_id is a foreign key (reference column) to Employee table.
+Each row of this table indicates that the employee with employee_id is working on the project with project_id.
 
  
 
-Write a solution to find the most recent three orders of each user. If a user ordered less than three orders, return all of their orders.
+Table: Employee
 
-Return the result table ordered by customer_name in ascending order and in case of a tie by the customer_id in ascending order. If there is still a tie, order them by order_date in descending order.
++------------------+---------+
+| Column Name      | Type    |
++------------------+---------+
+| employee_id      | int     |
+| name             | varchar |
+| experience_years | int     |
++------------------+---------+
+employee_id is the primary key (column with unique values) of this table.
+Each row of this table contains information about one employee.
+
+ 
+
+Write a solution to report the most experienced employees in each project. In case of a tie, report all employees with the maximum number of experience years.
+
+Return the result table in any order.
 
 The result format is in the following example.
 
@@ -40,91 +39,64 @@ The result format is in the following example.
 Example 1:
 
 Input: 
-Customers table:
-+-------------+-----------+
-| customer_id | name      |
-+-------------+-----------+
-| 1           | Winston   |
-| 2           | Jonathan  |
-| 3           | Annabelle |
-| 4           | Marwan    |
-| 5           | Khaled    |
-+-------------+-----------+
-Orders table:
-+----------+------------+-------------+------+
-| order_id | order_date | customer_id | cost |
-+----------+------------+-------------+------+
-| 1        | 2020-07-31 | 1           | 30   |
-| 2        | 2020-07-30 | 2           | 40   |
-| 3        | 2020-07-31 | 3           | 70   |
-| 4        | 2020-07-29 | 4           | 100  |
-| 5        | 2020-06-10 | 1           | 1010 |
-| 6        | 2020-08-01 | 2           | 102  |
-| 7        | 2020-08-01 | 3           | 111  |
-| 8        | 2020-08-03 | 1           | 99   |
-| 9        | 2020-08-07 | 2           | 32   |
-| 10       | 2020-07-15 | 1           | 2    |
-+----------+------------+-------------+------+
+Project table:
++-------------+-------------+
+| project_id  | employee_id |
++-------------+-------------+
+| 1           | 1           |
+| 1           | 2           |
+| 1           | 3           |
+| 2           | 1           |
+| 2           | 4           |
++-------------+-------------+
+Employee table:
++-------------+--------+------------------+
+| employee_id | name   | experience_years |
++-------------+--------+------------------+
+| 1           | Khaled | 3                |
+| 2           | Ali    | 2                |
+| 3           | John   | 3                |
+| 4           | Doe    | 2                |
++-------------+--------+------------------+
 Output: 
-+---------------+-------------+----------+------------+
-| customer_name | customer_id | order_id | order_date |
-+---------------+-------------+----------+------------+
-| Annabelle     | 3           | 7        | 2020-08-01 |
-| Annabelle     | 3           | 3        | 2020-07-31 |
-| Jonathan      | 2           | 9        | 2020-08-07 |
-| Jonathan      | 2           | 6        | 2020-08-01 |
-| Jonathan      | 2           | 2        | 2020-07-30 |
-| Marwan        | 4           | 4        | 2020-07-29 |
-| Winston       | 1           | 8        | 2020-08-03 |
-| Winston       | 1           | 1        | 2020-07-31 |
-| Winston       | 1           | 10       | 2020-07-15 |
-+---------------+-------------+----------+------------+
-Explanation: 
-Winston has 4 orders, we discard the order of "2020-06-10" because it is the oldest order.
-Annabelle has only 2 orders, we return them.
-Jonathan has exactly 3 orders.
-Marwan ordered only one time.
-We sort the result table by customer_name in ascending order, by customer_id in ascending order, and by order_date in descending order in case of a tie.
-
-Follow up: Could you write a general solution for the most recent n orders?
++-------------+---------------+
+| project_id  | employee_id   |
++-------------+---------------+
+| 1           | 1             |
+| 1           | 3             |
+| 2           | 1             |
++-------------+---------------+
+Explanation: Both employees with id 1 and 3 have the most experience among the employees of the first project. For the second project, the employee with id 1 has the most experience.
 
 -- SQL Schema
-Create table If Not Exists Customers (customer_id int, name varchar(10))
-Create table If Not Exists Orders (order_id int, order_date date, customer_id int, cost int)
-Truncate table Customers
-insert into Customers (customer_id, name) values ('1', 'Winston')
-insert into Customers (customer_id, name) values ('2', 'Jonathan')
-insert into Customers (customer_id, name) values ('3', 'Annabelle')
-insert into Customers (customer_id, name) values ('4', 'Marwan')
-insert into Customers (customer_id, name) values ('5', 'Khaled')
-Truncate table Orders
-insert into Orders (order_id, order_date, customer_id, cost) values ('1', '2020-07-31', '1', '30')
-insert into Orders (order_id, order_date, customer_id, cost) values ('2', '2020-7-30', '2', '40')
-insert into Orders (order_id, order_date, customer_id, cost) values ('3', '2020-07-31', '3', '70')
-insert into Orders (order_id, order_date, customer_id, cost) values ('4', '2020-07-29', '4', '100')
-insert into Orders (order_id, order_date, customer_id, cost) values ('5', '2020-06-10', '1', '1010')
-insert into Orders (order_id, order_date, customer_id, cost) values ('6', '2020-08-01', '2', '102')
-insert into Orders (order_id, order_date, customer_id, cost) values ('7', '2020-08-01', '3', '111')
-insert into Orders (order_id, order_date, customer_id, cost) values ('8', '2020-08-03', '1', '99')
-insert into Orders (order_id, order_date, customer_id, cost) values ('9', '2020-08-07', '2', '32')
-insert into Orders (order_id, order_date, customer_id, cost) values ('10', '2020-07-15', '1', '2')
 
+Create table If Not Exists Project (project_id int, employee_id int)
+Create table If Not Exists Employee (employee_id int, name varchar(10), experience_years int)
+Truncate table Project
+insert into Project (project_id, employee_id) values ('1', '1')
+insert into Project (project_id, employee_id) values ('1', '2')
+insert into Project (project_id, employee_id) values ('1', '3')
+insert into Project (project_id, employee_id) values ('2', '1')
+insert into Project (project_id, employee_id) values ('2', '4')
+Truncate table Employee
+insert into Employee (employee_id, name, experience_years) values ('1', 'Khaled', '3')
+insert into Employee (employee_id, name, experience_years) values ('2', 'Ali', '2')
+insert into Employee (employee_id, name, experience_years) values ('3', 'John', '3')
+insert into Employee (employee_id, name, experience_years) values ('4', 'Doe', '2')
+    
 -- Solution
 ----------------------------------------------------------------------------------------------------------------
 --Oracle
 ----------------------------------------------------------------------------------------------------------------
-select c.name customer_name, c.customer_id, x.order_id, od order_date
-from customers c
-inner join
+select project_id, employee_id
+from
 (
-    select order_id,to_char(order_date,'YYYY-MM-DD') od, customer_id
-    from(
-        select order_id,order_date,customer_id, row_number() over (partition by customer_id order by order_date desc) rn 
-        from orders
-    ) where rn <=3
-) x
-on c.customer_id = x.customer_id
-order by 1,2,4 desc
+    select p.project_id, e.employee_id, rank() over(partition by p.project_id order by e.experience_years desc) rk
+    from Project p
+    left join Employee e
+    on p.employee_id = e.employee_id
+)
+where rk = 1;
     
 ----------------------------------------------------------------------------------------------------------------
 -- MySQL
