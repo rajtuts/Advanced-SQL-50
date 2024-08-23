@@ -59,7 +59,7 @@
 | 0603 | [Consecutive Available Seats](/27-00603-consecutive-available-seats.sql)                                                       | Easy   | - |
 | 1795 | [Rearrange Products Table](/28-01795-rearrange-products-table.sql)                                                             | Easy   | - |
 | 0613 | [Shortest Distance in a Line](/29-00613-shortest-distance-in-a-line.sql)                                                       | Easy   | - |
-| 1341 | [Employees With Missing Information](/30-01965-employees-with-missing-information.sql)                                         | Easy   | - |
+| 1965 | [Employees With Missing Information](/30-01965-employees-with-missing-information.sql)                                         | Easy   | - |
 | 1264 | [Page Recommendations](/31-01264-page-recommendations.sql)                                                                     | Medium | - |
 | 0608 | [Tree Node](/32-00608-tree-node.sql)                                                                                           | Medium | -      |
 | 0534 | [Game Play Analysis III](/33-00534-game-play-analysis-iii.sql)                                                                 | Medium | -      |
